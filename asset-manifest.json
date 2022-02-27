@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Eternal-GTA/static/css/main.073c9b0a.css",
+    "main.js": "/Eternal-GTA/static/js/main.8d865fb2.js",
+    "static/js/787.13e91805.chunk.js": "/Eternal-GTA/static/js/787.13e91805.chunk.js",
+    "index.html": "/Eternal-GTA/index.html",
+    "main.073c9b0a.css.map": "/Eternal-GTA/static/css/main.073c9b0a.css.map",
+    "main.8d865fb2.js.map": "/Eternal-GTA/static/js/main.8d865fb2.js.map",
+    "787.13e91805.chunk.js.map": "/Eternal-GTA/static/js/787.13e91805.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.8d865fb2.js"
+  ]
+}
