@@ -2,7 +2,7 @@
   "name": "eternal-gta2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://eternalgta.github.io/Eternal-GTA",
+  "homepage": "https://eternalgta.github.io/eternal",
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
