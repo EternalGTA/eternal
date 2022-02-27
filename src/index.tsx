@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createTheme, ThemeProvider } from '@mui/material';
+import { HashRouter } from 'react-router-dom';
+
+const darkTheme = createTheme({
+	palette: {
+		mode: 'dark',
+	},
+	//spacing: 2
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+		<ThemeProvider theme={darkTheme}>
+			<HashRouter>
+				<App></App>
+			</HashRouter>
+		</ThemeProvider>
+	</React.StrictMode>,
   document.getElementById('root')
 );
 
