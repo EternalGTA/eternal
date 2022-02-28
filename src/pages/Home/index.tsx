@@ -1,4 +1,4 @@
-import Button from "../../components/Button";
+import { Grid } from "@mui/material";
 
 const buttons: Array<string> =[
     "Home",
@@ -11,11 +11,13 @@ const buttons: Array<string> =[
 export function Home() {
     return (
         <>
-            <div className="home">
-                {buttons.map(element => {
-                    return <Button name={element}></Button>
-                })}
-            </div>
+            <Grid className="home" container spacing={{ xs: 2, md: 5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                {buttons.map((element, index) => (
+                    <Grid item key={index}>
+                        <button className="menu-button">{element}</button>
+                    </Grid>
+                ))}
+            </Grid>
         </>
     );
 }

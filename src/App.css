@@ -15,17 +15,32 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  align-content: center;
+  justify-content: center;
 }
 
-.parent-button {
-  margin-left: 15px;
-  padding: 3px;
+.menu-button {
+  font-size: 22px;
   background: 
     linear-gradient(#272727, #272727) padding-box,
-    linear-gradient(to right, rgb(145, 145, 255), darkorchid) border-box;
+    linear-gradient(to right, rgb(118, 118, 255), rgb(255, 117, 117)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
 }
 
-.button {
-  background: #272727 repeat-x top left; float: left;
+.menu-button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: color 1s;
+}
+
+.menu-button:hover {
+  background:
+    linear-gradient(to right, rgb(118, 118, 255), rgb(255, 117, 117)) padding-box,
+    linear-gradient(to right, rgb(118, 118, 255), rgb(255, 117, 117)) border-box;
+  color: black;
 }
