@@ -1,0 +1,136 @@
+.card {
+  display: inline-flex;
+  margin: 20px;
+  position: relative;
+  opacity: 1;
+  width: 350px;
+  height: 320px;
+  background: #1d1d1d;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.card-header {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+}
+
+.card-name {
+  font-size: 32px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+}
+
+.card-body-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-body-image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+}
+
+.card-footer .card-button {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+
+.download-btn {
+  margin-right: 20px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  border-radius: 50em;
+  box-shadow: inset 0 0 0 2px #03c9a9;
+  color: #03c9a9;
+  transition: all 0.25s 0.0833333333s;
+}
+
+.download-btn:not(.disabled):hover {
+	color: black;
+	background-color: #03c9a9;
+}
+
+.download-btn:not(.disabled):hover::before,
+.download-btn:not(.disabled):hover::after {
+  border-radius: 50em;
+  width: 70%;
+  height: 70%;
+}
+
+.download-btn.disabled,
+.download-btn.disabled:hover {
+  cursor: not-allowed;
+}
+
+.btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	line-height: 1.5;
+	font: 700 12px "Roboto Slab", sans-serif;
+	padding: 1em 2em;
+	letter-spacing: 0.05rem;
+}
+
+.preview-btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  border-radius: 50em;
+  box-shadow: inset 0 0 0 2px #03c9a9;
+  color: #03c9a9;
+  transition: all 0.25s 0.0833333333s;
+}
+
+.preview-btn:hover {
+	color: black;
+	background-color: #03c9a9;
+}
+
+.preview-btn:hover::before,
+.preview-btn:hover::after {
+  border-radius: 50em;
+  width: 70%;
+  height: 70%;
+}
+
+.preview-btn.disabled,
+.preview-btn.disabled:hover {
+  background: rgba(255, 255, 255, 0.11);
+}

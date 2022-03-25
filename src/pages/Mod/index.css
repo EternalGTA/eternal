@@ -1,0 +1,81 @@
+.center {
+  	text-align: -webkit-center;
+}
+
+@media only screen and (max-width: 1550px) {
+	.content .container {
+		top: -70px;
+		position: relative;
+	}
+}
+
+.content .container {
+  	height: unset !important;
+}
+
+.content .container {
+	width: calc(100% - 240px);
+	height: calc(100% - 68px);
+	padding: 0 40px;
+	opacity: 1;
+	animation: items-enter 0.3s ease-out;
+	position: inherit;
+}
+
+.legend {
+	position: fixed;
+	height: 100%;
+	width: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.legend div:nth-child(1) {
+	display: flex;
+	margin-bottom: 12px;
+	font-size: 25px;
+	font-weight: bold;
+	background: linear-gradient(90deg, rgba(12,164,6,1) 1%, rgba(17,170,6,1) 17%, rgba(6,176,43,1) 27%, rgba(22,255,0,1) 100%);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.legend div:nth-child(2) {
+	display: flex;
+	margin-bottom: 12px;
+	font-size: 25px;
+	font-weight: bold;
+	background: linear-gradient(90deg, rgba(253,29,29,1) 50%, rgba(252,102,69,1) 100%);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.legend div:nth-child(3) {
+	display: flex;
+	margin-bottom: 12px;
+	font-size: 25px;
+	font-weight: bold;
+	background: linear-gradient(90deg, rgba(253,126,29,1) 50%, rgba(252,198,69,1) 100%);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.legend div:nth-child(4) {
+	display: flex;
+	margin-bottom: 12px;
+	font-size: 25px;
+	font-weight: bold;
+	background: linear-gradient(90deg, rgba(6,74,164,1) 1%, rgba(6,83,170,1) 17%, rgba(6,92,176,1) 27%, rgba(0,212,255,1) 100%);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,31 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.page .header {
+  	height: 8%;
+}
+
+.page .content {
+	flex: 1 0 auto;
+}
+
+::-webkit-scrollbar {
+  	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(255, 255, 255);
+	border-radius: 10px;
+}
+
+.page .footer {
+	height: 5%;
+	flex-shrink: 0;
+}
