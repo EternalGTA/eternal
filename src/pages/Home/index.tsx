@@ -21,7 +21,22 @@ export function Home() {
         <>
             <div className="home-title"><h1>ETERNAL GTA</h1></div>
             <Grid className="home" container spacing={{ xs: 2, md: 5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                {buttons.map((element, index) => {
+                <Grid item key={0}>
+                    <a href={""} className="menu-button">Home</a>
+                </Grid>
+                <Grid item key={1}>
+                    <a href="#/lobby" className="menu-button">Lobby</a>
+                </Grid>
+                <Grid item key={2}>
+                    <a href="#/mod-menu" className="menu-button">Mod Menu</a>
+                </Grid>
+                <Grid item key={3}>
+                    <a href="https://youtube.com/eternalgta" className="menu-button">YouTube</a>
+                </Grid>
+                <Grid item key={4}>
+                    <a href={"https://discord.gg/eternal-gta"} className="menu-button">Discord</a>
+                </Grid>
+                {/* {buttons.map((element, index) => {
                     if (index === 3) {
                         return <Grid item key={index}>
                             <a href={"https://youtube.com/eternalgta"} className="menu-button">{element}</a>
@@ -31,10 +46,11 @@ export function Home() {
                             <a href={"https://discord.gg/eternal-gta"} className="menu-button">{element}</a>
                         </Grid>;
                     }
+                    const href = `#/${redirection[index]}`;
                     return <Grid item key={index}>
-                        <a href={"#/" + redirection[index]} className="menu-button">{element}</a>
+                        <a href=href className="menu-button">{element}</a>
                     </Grid>
-                })}
+                })} */}
             </Grid>
         </>
     );
