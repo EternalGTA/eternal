@@ -36,8 +36,8 @@ export default function Header({selectedMenu}: props): JSX.Element {
 					<li><a href="#/">Home</a></li>
 					<li className={selectedMenu === 0 ? "menu-selected" : ""}><a href="#/lobby">Lobby</a></li>
 					<li className={selectedMenu === 1 ? "menu-selected" : ""}><a href="#/mod-menu">Mod Menus</a></li>
-					<li><a href="#/ytb">Youtube</a></li>
-					<li><a href="#/discord">Discord</a></li>
+					<li><a href="https://youtube.com/eternalgta">Youtube</a></li>
+					<li><a href="https://discord.gg/eternal-gta">Discord</a></li>
 				</ul>
 			</nav>
 		</header>

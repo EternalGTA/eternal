@@ -32,7 +32,7 @@ export function Home() {
                         </Grid>;
                     }
                     return <Grid item key={index}>
-                        <a href={"/#/" + redirection[index]} className="menu-button">{element}</a>
+                        <a href={"#/" + redirection[index]} className="menu-button">{element}</a>
                     </Grid>
                 })}
             </Grid>
