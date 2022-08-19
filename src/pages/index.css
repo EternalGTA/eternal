@@ -28,4 +28,8 @@
 .page .footer {
 	height: 5%;
 	flex-shrink: 0;
+	background: #2e2e2e;
+	display: flex;
+	align-items: center;
 }
+

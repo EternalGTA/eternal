@@ -1,5 +1,6 @@
 {
   "name": "eternal-gta2",
+  "homepage": "https://eternalgta.github.io/eternal/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -5,12 +5,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2e2e2e;
-  transition: all 1.5s ease-in;
+  background-color: #2e2e2e00;
+  transition: all 0.5s ease-in;
   z-index: 9999;
 }
 
 .navbar.scrolled {
+  background-color: #2e2e2e;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,11 +40,24 @@
 
 .navigation ul li a {
   text-decoration: none;
-  color: inherit;
+  color: #979797;
 }
 
 .navigation ul li:hover {
-  background-color: plum;
-  color: white;
   cursor: pointer;
+  background-color: #4949497e;
+  border-radius: 100px;
+}
+
+.navigation ul li:hover a {
+  color: white;
+}
+
+.navigation ul .menu-selected {
+  background-color: #494949 !important;
+  border-radius: 100px;
+}
+
+.navigation ul .menu-selected a {
+  color: white;
 }

@@ -1,26 +1,23 @@
-import React from "react";
-import { STATUS } from "../pages/Mod";
-import "./Card.css";
+import React, { useState } from "react";
+import { modProps, MODSTATE, MODSTATUS } from "../utils/interfaces";
+import Popup from "./Popup";
 
-interface cardProps {
-	name: string,
-	description: string,
-	url: string,
-	imageUrl: string,
-	activate: boolean,
-	status: STATUS
-};
+const colorCode = ["", "#0F0", "#F00", "#fabe58", "#0080FF"];
 
-const colorCode = ["#0F0", "#F00", "#fabe58", "#0080FF"];
-
-const ModCard: React.FC<cardProps> = (card: cardProps) => {
+const ModCard: React.FC<modProps> = (card: modProps) => {
+	require("./Card.css");
+	const [isOpen, setIsOpen] = useState(false);
+ 
+  	const togglePopup = () => {
+    	setIsOpen(!isOpen);
+  	}
 	function downloadMod() {
-		if (!card.activate) return;
-		window.open(card.url);
+		if (!card.detectionStatus) return;
+		window.open(card.downloadUrl);
 	}
 	return (
 		<>
-			<div className="card" style={{boxShadow: `1px 1px 2px 1px ${colorCode.at(card.status)}`}}>
+			<div className="card" style={{boxShadow: `1px 1px 2px 1px ${colorCode.at(card.detectionStatus)}`}}>
 				<div className="card-body">
 					<div className="card-body-image">
 						<img className="card-img" src={card.imageUrl} alt={card.name} />
@@ -33,14 +30,18 @@ const ModCard: React.FC<cardProps> = (card: cardProps) => {
 				</div>
 				<div className="card-footer">
 					<div className="card-button">
-						{card.activate ? <button className={`btn download-btn ` + (card.activate ? "" : "disabled")} disabled={!card.activate}
+						{card.status === MODSTATE.AVAILABLE && (card.detectionStatus === MODSTATUS.RISKY || card.detectionStatus === MODSTATUS.UNDETECT) ? <button className={`btn download-btn `}
 							onClick={downloadMod}>
 							Download
 						</button> : ""}
-						<button className="btn preview-btn">Preview</button>
+						<button className="btn preview-btn" onClick={togglePopup}>Preview</button>
 					</div>
 				</div>
 			</div>
+			{isOpen && <Popup
+			mod={card}
+			handleClose={togglePopup}
+			/>}
 		</>
 	);
 }

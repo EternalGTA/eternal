@@ -1,0 +1,23 @@
+.center {
+  	text-align: -webkit-center;
+}
+
+@media only screen and (max-width: 1550px) {
+	.content .container {
+		top: -70px;
+		position: relative;
+	}
+}
+
+.content .container {
+  	height: unset !important;
+}
+
+.content .container {
+	width: calc(100% - 240px);
+	height: calc(100% - 68px);
+	padding: 0 40px;
+	opacity: 1;
+	animation: items-enter 0.3s ease-out;
+	position: inherit;
+}
